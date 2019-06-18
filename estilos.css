@@ -40,7 +40,7 @@ nav ul li{
 .contenedor-titulo{
     display: flex;  
     justify-content: center;
-    margin: 1vh 0;
+    margin: -10vh 0;
 }
 
 .contenedor-titulo btn{
