@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    height: 150vh;
+    height: 100vh;
     background-color: black;
     background-size: cover;
 }
@@ -23,8 +23,8 @@ header{
 }
 
 header .logo {
-    color: rgb(255, 147, 6);
-    font-size: 25px;
+    color: #fff;
+    font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
     margin-left: 30px;
 }
@@ -40,16 +40,21 @@ nav ul li{
 .contenedor-titulo{
     display: flex;  
     justify-content: center;
-    margin: -10vh 0;
+    margin: -17vh 0;
 }
 
-.contenedor-titulo btn{
-    background: #5cb8ff;
-    display: inline-block;
-    font-size: 15px;
-    color: #fff;
-    padding: 14px 24px;
-}
+button.ml-subscribe-button {
+    border: none;
+    color: black;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgb(255, 147, 6);
+    font-family: 'Anton', sans-serif;
+    margin-left: 73px;
+    cursor: pointer;
+  }
 
 titulo ul li{
     list-style: none;
