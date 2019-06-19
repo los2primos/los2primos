@@ -43,7 +43,7 @@ nav ul li{
     margin: -17vh 0;
 }
 
-button.ml-subscribe-button {
+button.ml-subscribe-button, #sobre-nosotros a {
     border: none;
     color: black;
     padding: 14px 40px;
@@ -58,4 +58,23 @@ button.ml-subscribe-button {
 
 titulo ul li{
     list-style: none;
+}
+
+/*Sobre nosotros section*/
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#sobre-nosotros .contenedor-sobrenosotros{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-nosotros .texto{
+    color: black;
+    width: 42%
 }
