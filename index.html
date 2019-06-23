@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Slabo+27px&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Ramabhadra|Slabo+27px&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -50,8 +52,8 @@
         <div class="contenedor">
             <h3>Sobre nosotros</h3>
             <div class="contenedor-sobrenosotros">
-                <div class="hamburguesa"><img src="imagenes/hamburguesa1.jpg" alt="hamburguesa1" 
-                    style="width:640px;height:480px;"></div>
+                <div class="hamburguesa"><img src="imagenes/gilbertona2.jpg" alt="hamburguesa1" 
+                    style="width:640px;height:580px;"></div>
                 <div class="texto">
                     <p>Los 2 Primos have become one of the favorite hamburger & 
                         hot-dog restaurants by the UACh students and the Texcocan 
@@ -71,9 +73,38 @@
         </div>
     </section>
 
+    <section id="nuestros-productos">
+            <div class="contenedor">
+                <h3>Nuestros platillos</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="imagenes/pancho1.jpg"></div>
+                    <div class="item"><img src="imagenes/parrillada1.jpg"></div>
+                    <div class="item"><img src="imagenes/haywa1.jpg"></div>
+                    <div class="item"><img src="imagenes/menona1.jpg"></div>
+                    <div class="item"><img src="imagenes/pechugona1.jpg"></div>
+                    <div class="item"><img src="imagenes/hot_dog1.jpg"></div>
+                    <div class="item"><img src="imagenes/porchis1.jpg"></div>
+                    <div class="item"><img src="imagenes/gilbertona1.jpg"></div>
+                    <div class="item"><img src="imagenes/charro1.jpg"></div>
+                    <div class="item"><img src="imagenes/eggxitosa1.jpg"></div>
+                    <div class="item"><img src="imagenes/chiles_armados1.jpg"></div>
+                    <div class="item"><img src="imagenes/gilbertona2.jpg"></div>
+                    <div class="item"><img src="imagenes/andariega1.jpg"></div>
+                    <div class="item"><img src="imagenes/onion_rings2.jpg"></div>
+                    <div class="item"><img src="imagenes/gilbertona4.jpg"></div>
+                    <div class="item"><img src="imagenes/gilbertona3.jpg"></div>
+                    <div class="item"><img src="imagenes/big_primos1.jpg"></div>
+                    <div class="item"><img src="imagenes/merrican1.jpg"></div>
+                    <div class="item"><img src="imagenes/onion_rings1.jpg"></div>
+                    <div class="item"><img src="imagenes/charro2.jpg"></div>
+                    <div class="item"><img src="imagenes/gilbertona5.jpg"></div>
+                </div>
+            </div>
+        </section>
+
 <section id="productos">    
     <div class="contenedor">
-        <h3>Productos</h3>
+        <h3>Nuestro Menú</h3>
         <div class="contenedor-productos">
             <div class="producto orange">
                 <h4>Hamburguesas</h4>
@@ -84,15 +115,17 @@
             <div class="producto black">
                 <h4>Hot-dogs</h4>
                 <p>Nuestros hot-dogs de salchicha para asar y
-                    chorizo argentino son los favoritos de los chapingueros</p>
+                    chorizo argentino son los favoritos entre los
+                    gustos de los chapingueros</p>
                 <img src="imagenes/hamburguesa1.jpg" style="width:80px;height:60px;">
             </div>
             <div class="producto orange">
                 <h4>Otros platillos</h4>
                 <p>En Los 2 Primos contamos con gran variedad de platillos
-                    para los paladares exigentes como lo es nuestra gran Parrillada Vaquera
-                    sin dejar de lado tampoco los platillos complementarios
-                    como nuestras ricas papas a la francesa o los famosos chiles armados</p>
+                    con el fin de agradar a los paladares mas exigentes 
+                    añadiendo a nuestro menu platillos diversos como lo son 
+                    nuestra gran Parrillada Vaquera nuestras ricas papas fritas 
+                    o los deliciosos Chiles Armados</p>
                 <img src="imagenes/hamburguesa1.jpg" style="width:80px;height:60px;">
             </div>
         </div>
@@ -100,9 +133,38 @@
 </section>
 
 
+
+
 </main>
 
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="owl/owl.carousel.min.js"></script>
+
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+
 </body>
-
-
 </html>
