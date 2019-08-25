@@ -1,48 +1,14 @@
+header{
+    height: 100vh;
+    background-color: black;
+}
+
 body{
     background: #fff;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.contenedor {
-    width: 90%;
-    max-width: 1300px;
-    margin: auto;
-}
-
-header{
-    height: 100vh;
-    background-color: black;
-    background-size: cover;
-}
-
-#contenedor-menu {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-}
-
-header .logo {
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-left: 30px;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 50px;
-    color: rgb(255, 147, 6);
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.contenedor-titulo{
-    display: flex;  
-    justify-content: center;
-    margin: -17vh 0;
-}
-
-button.ml-subscribe-button, #sobre-nosotros a, #contacto input[type="submit"]{
+button.menu-button, #sobre-nosotros a, #contacto input[type="submit"]{
     border: none;
     color: black;
     padding: 14px 40px;
@@ -54,31 +20,48 @@ button.ml-subscribe-button, #sobre-nosotros a, #contacto input[type="submit"]{
     cursor: pointer;
   }
 
-  button.ml-subscribe-button{
-    margin-left: 73px;
+.contenedor {
+    width: 100%;
+    max-width: 1300px;
+}
+
+#contenedor-menu .home_logo {
+    width: 75px;
+    height: 94px;
+    padding: 3px 5px;
+}
+
+#contenedor-titulo .logo{
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul li{
+    display: none;
+}
+
+  button.menu-button{
+    display: block;
+    margin: 0 auto;
   }
 
-titulo ul li{
-    list-style: none;
-}
-
 /*Sobre nosotros section*/
-
-h3 {
-    text-align: center;
-    color: black;
-    font-size: 55px;
-    font-weight: normal;
-}
-
 #sobre-nosotros .contenedor-sobrenosotros{
-    display: flex;
-    justify-content: space-around;
+    width: 100;
 }
 
-#sobre-nosotros .texto{
+h2{
+    padding: 30px 30px 20px;
     color: black;
-    width: 42%
+    line-height: 44px;
+    font-size: 50px;
+}
+
+#sobre-nosotros .texto p{
+    padding: 0px 30px 20px;
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 #sobre-nosotros a {
@@ -87,7 +70,46 @@ h3 {
     justify-content: center;
 }
 
-/*Sobre nosotros section*/
+#sobre-nosotros .hamburguesa1{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    nav ul li{
+        display: inline-block;
+        margin-right: 50px;
+        color: rgb(255, 147, 6);
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #contenedor-menu .home_logo {
+        width: 150px;
+        height: 187.5px;
+    }
+
+    #contenedor-menu {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+    } 
+    #sobre-nosotros .contenedor-sobrenosotros{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+    #sobre-nosotros .hamburguesa1{
+        width: 100%;
+    }
+}
+
+/*Products section*/
 
 #productos .producto{
     color: white;
@@ -151,6 +173,6 @@ textarea{
 }
 
 #contacto input[type="submit"]{
-    width: 266px;
+    width: 202px;
     margin: auto;
 }
