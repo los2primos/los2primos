@@ -52,7 +52,7 @@ nav ul li{
     margin: 0 auto;
   }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
-/*Sobre nosotros section*/
+/*Sobre nosotros section MOBILE*/
 #sobre-nosotros .contenedor-sobrenosotros{
     width: 100;
 }
@@ -75,7 +75,7 @@ nav ul li{
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
-/*Our menu section*/
+/*Our menu section MOBILE*/
 
 .our-menu{
     display: block;
@@ -159,6 +159,8 @@ li {
             justify-content: space-evenly;
             margin: auto;
         } 
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+        /*Sobre nosotros section DESKTOP*/
         #sobre-nosotros .contenedor-sobrenosotros{
             display: flex;
             justify-content: space-between;
@@ -166,9 +168,11 @@ li {
             padding-bottom: 30px;
         }
         #sobre-nosotros .hamburguesa1{
-            width: 100%;
+            width: 70%;
+            height: 95vh;
         }
-
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+        /*Our menu section DESKTOP*/
         .menu1img {
             width: 38%;
             height: 95vh;
@@ -182,9 +186,9 @@ li {
         .our-menu{
             display: block;
             justify-content: center;
-            width: 100%;
+            width: 80%;
         }
-
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
         #contacto {
             background-color: rgb(255, 147, 6);
             color: white;

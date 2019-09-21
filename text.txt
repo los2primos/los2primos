@@ -1,0 +1,33 @@
+                <article class="texto">
+                    <p>Los 2 Primos have become one of the favorite hamburger & 
+                        hot-dog restaurants by the UACh students and the Texcocan 
+                        families in a very short time. Always bringing the highest 
+                        and freshest ingredients combining them with our Mexican 
+                        north style seasoning.</p>
+                    <p>Founded by two young entrepreneur cousins who are passionate about 
+                        food and cooking and were once looking to create the 
+                        hamburgers that everyone would admire. </p>
+                    <p>Los 2 Primos love to try new things and experiment new 
+                        flavours updating our menú every 6 months and loving how 
+                        the customers enjoy trying out our innovative products 
+                        which always have our distinguished style</p>
+                </article>   
+
+
+                <article class="texto">
+                    <p>Los 2 Primos se han convertido en uno de los restaurantes de 
+			hamburguesas y hot-dogs favoritos de los estudiantes 
+			chapingueros y de las familias texcococanas en muy poco tiempo. 
+                        Siempre brindandoles los ingredientes más frescos y de mayor
+			calidad combinandolos, por supuesto, con su gran sazón 
+			norteño.</p>
+                    <p>Fundado en 2017 por dos primos jovenes y emprendedores apasionados
+                        por la cocina y la buena comida quienes buscaban en ese momento
+			crear las mejores hamburguesas y hot-dogs unos que cualquiera 
+			pudiera admirar y degustar.</p>
+                    <p>A Los 2 Primos les encanta innovar y experimentar con nuevos
+			sabores actualizando su menú cada semestre y observando 
+			como los clientes disfrutan probando los nuevos platillos
+			ideados cada uno especialmente y dedicadamente por Los 2 Primos, 
+                        claro, con su estilo distinguido! Puro Durango!</p>
+                </article>   
