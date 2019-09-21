@@ -79,7 +79,7 @@ nav ul li{
 
 .our-menu{
     display: block;
-    width: 100%;
+    width: 95%;
 }
 
 .our-menu p{
@@ -169,6 +169,22 @@ li {
             padding-bottom: 30px;
         }
         #sobre-nosotros .hamburguesa1{
+            width: 100%;
+        }
+
+        .menu1img {
+            width: 38%;
+            height: 95vh;
+        }
+        
+        .menu2img {
+            width: 38%;
+            height: 95vh;
+        }
+
+        .our-menu{
+            display: block;
+            justify-content: center;
             width: 100%;
         }
     }
