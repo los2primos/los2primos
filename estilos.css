@@ -9,10 +9,11 @@ body{
 }
 
 h2{
-    padding: 0px 10px 0px;
+    text-align: center;
     color: black;
     line-height: 44px;
     font-size: 40px;
+    padding: 20px 0px 0px 0px;
 }
 
 button.menu-button, #sobre-nosotros a, #contacto input[type="submit"]{
@@ -55,21 +56,9 @@ nav ul li{
 /*Sobre nosotros section MOBILE*/
 #sobre-nosotros .contenedor-sobrenosotros{
     width: 100;
+    display: block;
+    text-align: center;
 }
-
-#sobre-nosotros .texto p{
-    padding: 0px 30px 20px;
-    color: black;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-#sobre-nosotros a {
-    cursor: pointer;
-    margin-top: 20px;
-    justify-content: center;
-}
-
 #sobre-nosotros .hamburguesa1{
     width: 100%;
 }
@@ -80,21 +69,18 @@ nav ul li{
 .our-menu{
     display: block;
     width: 95%;
+    text-align: center;
+    justify-content: center;
 }
 
 .our-menu p{
     color: black;
 }
 
-.menu1img {
+.menu1img, .menu2img {
     width: 100%;
     height: 85vh;
-}
-
-.menu2img {
-    width: 100%;
-
-    height: 85vh;
+    padding: 0px 0px 0px 10px;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
@@ -102,28 +88,27 @@ nav ul li{
 #contacto {
     background-color: rgb(255, 147, 6);
     color: white;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     display: block;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-h4 {
-    padding: 10px 15px 10px;
-    line-height: 44px;
-    font-size: 20px;
-}
-
-li {
+#contacto li {
+    padding: 0px 0px 0px 90px;
     list-style: none;
 }
 
 .social-link {
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
     display: inline-block;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.social {
+    padding: 20px 60px 0px 35px;
 }
 
 .social-link.facebook{
@@ -135,6 +120,10 @@ li {
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (min-width: 768px){
+    header{
+        height: 105vh;
+        background-color: black;
+    }
     nav ul li{
         display: inline-block;
         justify-content: space-evenly;
@@ -167,37 +156,65 @@ li {
         #sobre-nosotros .contenedor-sobrenosotros{
             display: flex;
             justify-content: space-between;
-            margin-top: 0px;
-            padding-bottom: 30px;
+            padding: 20px 0px 30px 0px;
+            text-align: center;
         }
         #sobre-nosotros .hamburguesa1{
             width: 70%;
             height: 95vh;
         }
+
+        #sobre-nosotros p{
+            padding-right: 5px;
+        }
+                /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+        /*Nuestros platillos section DESKTOP*/
+        #nuestros-productos{
+            text-align: center;
+        }
         /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
         /*Our menu section DESKTOP*/
         .menu1img {
-            width: 38%;
-            height: 85vh;
+            width: 40%;
+            height: 95vh;
         }
         
         .menu2img {
-            width: 38%;
-            height: 85vh;
+            width: 40%;
+            height: 95vh;
         }
 
         .our-menu{
+            margin-top: 20px;
             display: inline-block;
+            text-align: center;
             justify-content: center;
-            width: 80%;
+            width: 100%;
         }
         /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
-        #contacto {
+        /*Our menu section DESKTOP*/
+        #contact {
             background-color: rgb(255, 147, 6);
             color: white;
-            height: 27vh;
+            height: 30px;
             width: 100%;
-            display: block;
-            justify-content: space-between;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #contacto li {
+            padding: 0px 0px 0px 580px;
+            list-style: none;
+        }
+
+        .social {
+            padding: 20px 60px 0px 490px;
+        }
+
+        .social-link {
+            width: 90px;
+            height: 90px;
+            background-size: 90px 90px;
         }
     }
