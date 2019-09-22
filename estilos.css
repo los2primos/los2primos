@@ -251,7 +251,7 @@ nav ul li{
     }   
 
    /* MOBILE Landscape */
-@media only screen and (min-width: 600px) and (max-width: 840px) and (orientation: Landscape) {
+@media only screen and (min-width: 568px) and (max-width: 840px) and (orientation: Landscape) {
     header{
         height: 130vh;
         background-color: black;
@@ -316,6 +316,6 @@ nav ul li{
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 /*Contacto section MOBILE*/
 #contacto {
-    height: 140vh;
+    height: 120vh;
 }
     }
