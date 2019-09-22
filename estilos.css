@@ -90,10 +90,14 @@ nav ul li{
 #contacto {
     background-color: rgb(255, 147, 6);
     color: white;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     text-align: center;
     display: block;
+}
+
+#contacto h4{
+    font-size: 20px;
 }
 
 #contacto li {
@@ -109,7 +113,7 @@ nav ul li{
 }
 
 .social {
-    padding: 20px 40px 0px 0px;
+    padding: 20px 82px 0px 0px;
 }
 
 .social-link.facebook{
@@ -123,7 +127,7 @@ nav ul li{
 /*Location section MOBILE*/
 #ubicacion{
     background-color: black;
-    height: 100vh;
+    height: 110vh;
     text-align: center;
     width: 100%;
 }
@@ -131,6 +135,11 @@ nav ul li{
     color: #fff;
     text-align: center;
 }
+
+#ubicacion h2{
+    padding-top: 50px;
+}
+
 #ubicacion iframe{
     width: 95vw;
     height: 65vh;
@@ -209,30 +218,27 @@ nav ul li{
             width: 100%;
         }
         /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
-        /*Our menu section DESKTOP*/
+        /*Contact section DESKTOP*/
         #contact {
             background-color: rgb(255, 147, 6);
             color: white;
             height: 30px;
             width: 100%;
-            display: inline-block;
-            justify-content: center;
             text-align: center;
         }
 
         #contacto li {
-            padding: 0px 0px 0px 580px;
             list-style: none;
         }
 
         .social {
-            padding: 20px 60px 0px 490px;
+            padding: 20px 85px 0px 0px;
         }
 
         .social-link {
-            width: 90px;
-            height: 90px;
-            background-size: 90px 90px;
+            width: 100px;
+            height: 100px;
+            background-size: 100px 100px;
         }
         /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
         /*Location section DESKTOP*/
