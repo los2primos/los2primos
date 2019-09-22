@@ -44,6 +44,8 @@ button.menu-button, #sobre-nosotros a, #contacto input[type="submit"]{
 #contenedor-titulo .logo{
     display: block;
     margin: 0 auto;
+    width: 320px;
+    height: 400;
 }
 
 nav ul li{
@@ -145,7 +147,7 @@ nav ul li{
     height: 65vh;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
     header{
         height: 105vh;
         background-color: black;
@@ -245,5 +247,65 @@ nav ul li{
         #ubicacion iframe{
             width: 1000px;
             height: 500px;
+        }
+    }   
+
+   /* MOBILE Landscape */
+@media only screen and (min-width: 600px) and (max-width: 767px) and (orientation: Landscape) {
+    header{
+        height: 105vh;
+        background-color: black;
+    }
+    #contenedor-menu .home_logo {
+        display: none;
+    }
+    #contenedor-titulo .logo{
+        display: block;
+        margin: 0 auto;
+        width: 240px;
+        height: 300px;
+    }
+    a{
+        color: rgb(255, 147, 6);
+        text-decoration: none;
+    }
+        .logo {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        #contenedor-menu .home_logo {
+            width: 150px;
+            height: 187.5px;
+        }
+    
+        #contenedor-menu {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+        } 
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+        /*Nuestros platillos section MOBILE LANDSCAPE*/
+        #nuestros-productos{
+            text-align: center;
+        }
+        /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+        /*Our menu section MOBILE LANDSCAPE*/
+        .menu1img {
+            width: 40%;
+            height: 95vh;
+        }
+        
+        .menu2img {
+            width: 40%;
+            height: 95vh;
+        }
+
+        .our-menu{
+            margin-top: 20px;
+            display: inline-block;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
         }
     }
