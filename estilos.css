@@ -313,9 +313,13 @@ nav ul li{
     #ubicacion{
     height: 115vh;
 }
+#ubicacion iframe{
+    width: 95vw;
+    height: 55vh;
+}
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 /*Contacto section MOBILE*/
 #contacto {
-    height: 120vh;
+    height: 110vh;
 }
     }
