@@ -253,7 +253,7 @@ nav ul li{
    /* MOBILE Landscape */
 @media only screen and (min-width: 600px) and (max-width: 840px) and (orientation: Landscape) {
     header{
-        height: 115vh;
+        height: 130vh;
         background-color: black;
     }
     #contenedor-menu .home_logo {
@@ -316,6 +316,6 @@ nav ul li{
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 /*Contacto section MOBILE*/
 #contacto {
-    height: 600px;
+    height: 140vh;
 }
     }
