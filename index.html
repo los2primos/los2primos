@@ -35,7 +35,7 @@
                     </li>
                     <li><a href='#nuestros-productos'>NUESTROS PLATILLOS</a>
                     </li>
-                    <li><a href='#our-menu'>NUESTRO MENU</a>
+                    <li><a href='#our-menu'>NUESTRO MENÚ</a>
                     </li>
                     <li><a href='#contacto'>CONTACTO</a>
                     </li>
@@ -44,14 +44,13 @@
                 </ul>
             </nav>
         </div>
-
         <div class="contenedor" id="contenedor-titulo">
-                        <img class="logo" src="imagenes/logo_blanco.png" alt="logo blanco"></li>
-                            <div stylclass="button-preview">
-                                <button onClick="document.getElementById('our-menu').scrollIntoView();" type="submit" class="menu-button">NUESTRO MENU</button>
-                            </div>
+            <div><img class="logo" src="imagenes/logo_blanco.png" alt="logo blanco"></div>
+            <div>
+                <button onClick="document.getElementById('our-menu').scrollIntoView();" 
+                        type="submit" class="menu-button">VER MENÚ</button>
         </div>
-
+        </div>
     </header>
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -141,21 +140,34 @@
 <section id="contacto" class="contact">
         <h2>¿Ya sabes que pedir?</h2>
         <h4>¡Envianos un whatsapp!</h4>
-        <li>
-            <img src="imagenes/schedule.svg"
-            alt="schedule">
-            Lun-Dom/6pm-11:30pm
-        </li>
-        <li>
-            <img src="imagenes/phone.svg" 
-            alt="phone">
-            (55)-7665-1274
-        </li>
+        <div>
+            <img src="imagenes/schedule.svg" alt="schedule">
+            <h5>Lun-Dom/6pm-11:30pm</h5>
+        </div>
+        <div>
+            <img src="imagenes/phone.svg" alt="phone">
+            <img src="imagenes/whatsapp.svg" alt="wa">
+            <h5>(55)-7665-1274</h5>
+        </div>
+        <h4>O siguenos a través de nuestras redes sociales:</h4>
+            <div class="social">
+                    <a href="https://www.facebook.com/los2primosdurango" class="social-link facebook"></a>
+                    <a href="https://www.instagram.com/los2primosdurango" class="social-link instagram"></a>
+            </div>
     </div>
-    <div class="social">
-        <a href="" class="social-link whatsapp"></a>
-        <a href="https://www.facebook.com/los2primosdurango" class="social-link facebook"></a>
-        <a href="https://www.instagram.com/los2primosdurango" class="social-link instagram"></a>
+</section>
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// --> 
+<section id="mailbox" class="mailbox">
+    <div class="contenedor">
+            <h2>Los 2 Primos</h2>
+            <h4>Queremos escuchar tus opiniones y sugerencias ¡Envianos un mensaje directamente!</h4>
+                <form action="https://formspree.io/los2primosinternal@gmail.com" method="POST">
+                        <input type="text" placeholder="Nombre" name="nombre">
+                        <input type="email" placeholder="Email" name="_replyto">
+                        <textarea name="body" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="Enviar mensaje">
+                </form>
     </div>
 </section>
 

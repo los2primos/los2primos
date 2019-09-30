@@ -1,6 +1,8 @@
 header{
-    height: 100vh;
     background-color: black;
+    height: 100vh;
+    width: 98vw;
+    padding: 0 0 0 0;
 }
 
 body{
@@ -18,7 +20,7 @@ h2{
     margin-block-end: 0.4em;
 }
 
-button.menu-button, #sobre-nosotros a, #contacto input[type="submit"]{
+button.menu-button, #mailbox input[type="submit"]{
     border: none;
     color: black;
     padding: 14px 40px;
@@ -28,35 +30,50 @@ button.menu-button, #sobre-nosotros a, #contacto input[type="submit"]{
     background-color: rgb(255, 147, 6);
     font-family: 'Anton', sans-serif;
     cursor: pointer;
+    margin: auto;
+    display: block;
   }
 
 .contenedor {
     width: 100%;
     max-width: 1300px;
+    margin: auto;
 }
-
+/* ************************************************************************************** */
+/* Contenedor menú MOBILE*/
+#contenedor-menu{
+    margin : 0 auto;
+    display : flex;
+    flex-direction: row;
+    justify-content : space-between;
+    height: 17%;
+}
 #contenedor-menu .home_logo {
-    width: 75px;
-    height: 94px;
+    height: 100%;
     padding: 3px 5px;
-}
-
-#contenedor-titulo .logo{
-    display: block;
-    margin: 0 auto;
-    width: 320px;
-    height: 400;
 }
 
 nav ul li{
     display: none;
 }
 
-  button.menu-button{
+/* Contenedor título MOBILE */
+#contenedor-titulo{
+    margin : 0 auto;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-between;
+    align-items: center;
+}
+
+.logo{
     display: block;
+    width: 90%;
+    height: 70%;
     margin: 0 auto;
-  }
-/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+    padding: 0 0 10%;
+}
+
 /*Sobre nosotros section MOBILE*/
 #sobre-nosotros .contenedor-sobrenosotros{
     width: 100;
@@ -87,45 +104,6 @@ nav ul li{
     padding: 0px 0px 0px 10px;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////// */
-/*Contacto section MOBILE*/
-#contacto {
-    background-color: rgb(255, 147, 6);
-    color: white;
-    height: 60vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-}
-
-#contacto h4{
-    font-size: 20px;
-}
-
-#contacto li {
-    list-style: none;
-}
-
-.social-link {
-    width: 70px;
-    height: 70px;
-    background-size: 70px 70px;
-    display: inline-block;
-    justify-content: space-evenly;
-}
-
-.social {
-    padding: 20px 82px 0px 0px;
-}
-
-.social-link.facebook{
-    background-image: url('imagenes/facebook.svg');
-}
-
-.social-link.instagram{
-    background-image: url('imagenes/instagram.svg');
-}
-/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
 /*Location section MOBILE*/
 #ubicacion{
     background-color: black;
@@ -146,10 +124,89 @@ nav ul li{
     width: 95vw;
     height: 65vh;
 }
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-@media only screen and (min-width: 1024px){
+
+/*Contacto section MOBILE*/
+#contacto {
+    background-color: rgb(255, 147, 6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#contacto h4{
+    font-size: 20px;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.33em;
+}
+
+
+.social-link {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+#contacto h5{
+    margin-block-start: 0;
+    margin-block-end: 1.67em;
+}
+
+.social-link.facebook{
+    background-image: url('imagenes/facebook.svg');
+}
+
+.social-link.instagram{
+    background-image: url('imagenes/instagram.svg');
+}
+
+/*Mailbox section MOBILE*/
+#mailbox {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+#mailbox form{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+input[type="email"], input[type="text"], textarea{
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    background-color: black;
+    border-bottom: 1px solid  rgb(255, 147, 6);
+    font-size: 17px;
+    color: #fff;
+}
+
+textarea{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#mailbox h2{
+    color: #fff;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: Landscape){
     header{
-        height: 105vh;
+        height: 100vh;
         background-color: black;
     }
     nav ul li{
@@ -165,8 +222,7 @@ nav ul li{
         text-decoration: none;
     }
         .logo {
-            display: block;
-            margin: 0 auto;
+           width: 22vw;
         }
     
         #contenedor-menu .home_logo {
@@ -224,9 +280,8 @@ nav ul li{
         #contact {
             background-color: rgb(255, 147, 6);
             color: white;
-            height: 30px;
             width: 100%;
-            text-align: center;
+            margin: auto;
         }
 
         #contacto li {
@@ -234,7 +289,7 @@ nav ul li{
         }
 
         .social {
-            padding: 20px 85px 0px 0px;
+            padding: 20px;
         }
 
         .social-link {
@@ -253,37 +308,35 @@ nav ul li{
    /* MOBILE Landscape */
 @media only screen and (min-width: 568px) and (max-width: 840px) and (orientation: Landscape) {
     header{
-        height: 130vh;
+        height: 100vh;
         background-color: black;
+    }
+    #contenedor-menu{
+        display: none;
     }
     #contenedor-menu .home_logo {
         display: none;
     }
+
     #contenedor-titulo .logo{
-        display: block;
-        margin: 0 auto;
-        width: 240px;
-        height: 300px;
+        padding: 0 0 0 0;
     }
     a{
         color: rgb(255, 147, 6);
         text-decoration: none;
     }
-        .logo {
-            display: block;
-            margin: 0 auto;
-        }
+
+    .logo{
+        display: block;
+        width: 24vw;
+        height: 70vh;
+        margin: 0 auto;
+    }
     
         #contenedor-menu .home_logo {
             width: 150px;
             height: 187.5px;
         }
-    
-        #contenedor-menu {
-            display: flex;
-            justify-content: space-evenly;
-            margin: auto;
-        } 
         /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
         /*Nuestros platillos section MOBILE LANDSCAPE*/
         #nuestros-productos{
@@ -317,9 +370,55 @@ nav ul li{
     width: 95vw;
     height: 55vh;
 }
-/* ///////////////////////////////////////////////////////////////////////////////////////////// */
-/*Contacto section MOBILE*/
-#contacto {
-    height: 110vh;
-}
     }
+ /* SMALL TABLET PORTRAIT */
+@media only screen and (min-width: 568px) and (max-width: 840px) and (orientation: portrait) {
+    .logo{
+        display: block;
+        width: 60vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+
+    nav ul li{
+        display: none;
+    }
+}
+ /* SMALL TABLET LANDSCAPE */
+ @media only screen and (min-width: 568px) and (max-width: 1024px) and (orientation: Landscape) {
+    .logo{
+        display: block;
+        width: 50vw;
+        height: 80vh;
+        margin: 0 auto;
+    }
+
+    #contenedor-menu{
+        display: none;
+    }
+
+    nav ul li{
+        display: none;
+    }
+}
+ /* LARGE TABLET PORTRAIT */
+ @media only screen and (min-width: 840px) and (max-width: 1025px) and (orientation: portrait) {
+    .logo{
+        display: block;
+        width: 60vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    #contenedor-menu{
+        margin : 0 auto;
+        display : flex;
+        flex-direction: row;
+        justify-content : space-between;
+        height: 17%;
+    }
+}
